@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="main-ui">
+    <div class="problem"></div>
+    <form action="submit" class="ourForm">
+      <input type="text" class="ourField">
+      <button>Submit</button>
+    </form>
+    <p>Your score is <span class="score">0</span>, and you have <span class="attempt">3</span> attempts left.</p>
+    <h2>Make 10 points to win.</h2>
+
+    <div class="progress">
+      <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <div class="progress-inner">
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay">
+    <div class="overlay-inner">
+      <p class="end-message"></p>
+      <button class="reset-button">Replay</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+.progress {
+  border: 1px solid #272727;
+  border-right: none;
+  position: relative;
+}
+.progress-inner {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: teal;
+  opacity: .82;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all .33s ease-out;
+}
+.boxes {
+  display: flex;
+}
+
+.box {
+  flex: 1;
+  height: 40px;
+  border-right: 1px solid #272727;
+}
+
+.main-ui {
+  font-family: sans-serif;
+}
+p {
+  text-align: center;
+}
+
+.ourForm {
+  text-align: center;
+  margin-top: 0px;
+}
+
+.problem {
+  font-weight: 600;
+  font-size: 3em;
+  margin-bottom: 5px;
+}
+
+.attempt {
+ color: red;
+}
+
+.point{
+  color: rgb(54, 214, 54);
+}
+
+.playmore {
+  text-align: center;
+}
+
+.overlay {
+  position: fixed;
+  background-color: rgba(225, 120, 78, 0.82);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  visibility: hidden;
+}
+
+.overlay-is-active .overlay {
+  visibility: visible;
+  transform: scale(1.5);
+  transition: all .33s ease-out;
+}
+
+.overlay-is-active .main-ui {
+  filter: blur(4px);
+}
